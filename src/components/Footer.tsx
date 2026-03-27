@@ -85,7 +85,7 @@ export default function Footer() {
             </li>
           </ul>
           <p className="mt-4 text-xs text-gray-500">
-            SIRET : 819 779 984 00023 — RGE QualiPV
+            SIRET : 948 607 841 — RGE QualiPV
           </p>
         </div>
       </div>

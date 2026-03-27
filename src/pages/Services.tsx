@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Zap, Sun, Wind, ArrowRight, CheckCircle2, Shield } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const services = [
   {
@@ -64,11 +65,13 @@ export default function Services() {
       {/* Header */}
       <section className="bg-enerzig-dark text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Nos Services</h1>
-          <p className="text-gray-300 max-w-xl mx-auto">
-            Des solutions énergétiques complètes pour particuliers et
-            professionnels en Nouvelle-Aquitaine.
-          </p>
+          <AnimatedSection animation="fade-up">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Nos Services</h1>
+            <p className="text-gray-300 max-w-xl mx-auto">
+              Des solutions énergétiques complètes pour particuliers et
+              professionnels en Nouvelle-Aquitaine.
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -76,13 +79,8 @@ export default function Services() {
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 space-y-16">
           {services.map((s, i) => (
-            <div
-              key={s.id}
-              className={`grid md:grid-cols-2 gap-10 items-center ${
-                i % 2 === 1 ? "md:flex-row-reverse" : ""
-              }`}
-            >
-              <div className={i % 2 === 1 ? "md:order-2" : ""}>
+            <div key={s.id} className="grid md:grid-cols-2 gap-10 items-center">
+              <AnimatedSection animation={i % 2 === 0 ? "fade-left" : "fade-right"} className={i % 2 === 1 ? "md:order-2" : ""}>
                 <div className={`w-14 h-14 ${s.bg} rounded-2xl flex items-center justify-center mb-4`}>
                   <s.icon className={`w-7 h-7 ${s.color}`} />
                 </div>
@@ -105,13 +103,13 @@ export default function Services() {
                 >
                   Demander un devis <ArrowRight className="w-4 h-4" />
                 </Link>
-              </div>
+              </AnimatedSection>
 
-              <div className={`${i % 2 === 1 ? "md:order-1" : ""}`}>
+              <AnimatedSection animation={i % 2 === 0 ? "fade-right" : "fade-left"} className={i % 2 === 1 ? "md:order-1" : ""}>
                 <div className={`rounded-2xl ${s.bg} p-10 flex items-center justify-center min-h-[280px]`}>
                   <s.icon className={`w-32 h-32 ${s.color} opacity-30`} />
                 </div>
-              </div>
+              </AnimatedSection>
             </div>
           ))}
         </div>
@@ -120,24 +118,26 @@ export default function Services() {
       {/* Trust badges */}
       <section className="py-12 bg-gray-50 border-t">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex flex-wrap justify-center gap-6 items-center">
-            <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border">
-              <Shield className="w-5 h-5 text-enerzig-green" />
-              <span className="text-sm font-semibold text-enerzig-dark">Certifié RGE</span>
+          <AnimatedSection>
+            <div className="flex flex-wrap justify-center gap-6 items-center">
+              <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border">
+                <Shield className="w-5 h-5 text-enerzig-green" />
+                <span className="text-sm font-semibold text-enerzig-dark">Certifié RGE</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border">
+                <Sun className="w-5 h-5 text-enerzig-orange" />
+                <span className="text-sm font-semibold text-enerzig-dark">QualiPV</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border">
+                <Zap className="w-5 h-5 text-yellow-500" />
+                <span className="text-sm font-semibold text-enerzig-dark">Qualifelec</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border">
+                <Wind className="w-5 h-5 text-blue-500" />
+                <span className="text-sm font-semibold text-enerzig-dark">Qualipac</span>
+              </div>
             </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border">
-              <Sun className="w-5 h-5 text-enerzig-orange" />
-              <span className="text-sm font-semibold text-enerzig-dark">QualiPV</span>
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border">
-              <Zap className="w-5 h-5 text-yellow-500" />
-              <span className="text-sm font-semibold text-enerzig-dark">Qualifelec</span>
-            </div>
-            <div className="flex items-center gap-2 px-4 py-2 bg-white rounded-xl shadow-sm border">
-              <Wind className="w-5 h-5 text-blue-500" />
-              <span className="text-sm font-semibold text-enerzig-dark">Qualipac</span>
-            </div>
-          </div>
+          </AnimatedSection>
         </div>
       </section>
     </div>

@@ -1,4 +1,5 @@
 import { Sun, Zap, Wind } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const projects = [
   {
@@ -71,11 +72,13 @@ export default function Realisations() {
       {/* Header */}
       <section className="bg-enerzig-dark text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Nos Réalisations</h1>
-          <p className="text-gray-300 max-w-xl mx-auto">
-            Découvrez quelques-uns de nos chantiers réalisés en Gironde et
-            Nouvelle-Aquitaine.
-          </p>
+          <AnimatedSection animation="fade-up">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Nos Réalisations</h1>
+            <p className="text-gray-300 max-w-xl mx-auto">
+              Découvrez quelques-uns de nos chantiers réalisés en Gironde et
+              Nouvelle-Aquitaine.
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -96,30 +99,29 @@ export default function Realisations() {
       {/* Projects grid */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((p) => (
-            <div
-              key={p.title}
-              className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden"
-            >
-              <div className={`${p.bg} p-8 flex items-center justify-center`}>
-                <p.icon className={`w-16 h-16 ${p.color} opacity-60`} />
-              </div>
-              <div className="p-5">
-                <span className="inline-block px-2.5 py-0.5 bg-gray-100 text-gray-600 text-xs font-medium rounded-full mb-2">
-                  {p.category}
-                </span>
-                <h3 className="font-bold text-enerzig-dark text-lg mb-1">{p.title}</h3>
-                <p className="text-xs text-gray-400 mb-3">{p.location}</p>
-                <p className="text-gray-500 text-sm mb-4 leading-relaxed">{p.desc}</p>
-                <div className="flex flex-wrap gap-2">
-                  {p.details.map((d) => (
-                    <span key={d} className="px-2 py-0.5 bg-gray-50 border border-gray-200 rounded text-xs text-gray-600">
-                      {d}
-                    </span>
-                  ))}
+          {projects.map((p, i) => (
+            <AnimatedSection key={p.title} animation="scale" delay={i * 80}>
+              <div className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full">
+                <div className={`${p.bg} p-8 flex items-center justify-center`}>
+                  <p.icon className={`w-16 h-16 ${p.color} opacity-60`} />
+                </div>
+                <div className="p-5">
+                  <span className="inline-block px-2.5 py-0.5 bg-gray-100 text-gray-600 text-xs font-medium rounded-full mb-2">
+                    {p.category}
+                  </span>
+                  <h3 className="font-bold text-enerzig-dark text-lg mb-1">{p.title}</h3>
+                  <p className="text-xs text-gray-400 mb-3">{p.location}</p>
+                  <p className="text-gray-500 text-sm mb-4 leading-relaxed">{p.desc}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {p.details.map((d) => (
+                      <span key={d} className="px-2 py-0.5 bg-gray-50 border border-gray-200 rounded text-xs text-gray-600">
+                        {d}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
       </section>

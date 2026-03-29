@@ -1,0 +1,114 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ElectricalContractor",
+  "@id": "https://enerzig.com/#organisation",
+  "name": "Enerzig",
+  "url": "https://enerzig.com",
+  "logo": "https://enerzig.com/assets/logo.png",
+  "image": "https://enerzig.com/assets/enerzig-equipe.jpg",
+  "description": "Enerzig, entreprise d'électricité générale, installation de panneaux photovoltaïques, climatisation, VMC et GTB à Libourne et dans toute la Gironde (Bordeaux et Nouvelle-Aquitaine).",
+  "foundingDate": "2023",
+  "telephone": "",
+  "email": "",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "",
+    "addressLocality": "Libourne",
+    "postalCode": "33500",
+    "addressRegion": "Nouvelle-Aquitaine",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 44.9219,
+    "longitude": -0.2419
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Libourne",
+      "sameAs": "https://www.wikidata.org/wiki/Q170059"
+    },
+    {
+      "@type": "City",
+      "name": "Bordeaux",
+      "sameAs": "https://www.wikidata.org/wiki/Q1479"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Gironde"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Libournais"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Nouvelle-Aquitaine"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Nos services énergétiques",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Électricité générale",
+          "description": "Installation et mise aux normes électriques pour particuliers et professionnels en Gironde.",
+          "url": "https://enerzig.com/electricite"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Installation panneaux photovoltaïques",
+          "description": "Installation de panneaux solaires photovoltaïques à Libourne, Bordeaux et dans toute la Gironde.",
+          "url": "https://enerzig.com/photovoltaique"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Climatisation",
+          "description": "Installation et entretien de systèmes de climatisation réversible en Gironde.",
+          "url": "https://enerzig.com/climatisation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "VMC - Ventilation mécanique contrôlée",
+          "description": "Installation de VMC simple flux et double flux pour maisons et bâtiments en Nouvelle-Aquitaine.",
+          "url": "https://enerzig.com/ventilation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "GTB - Gestion technique du bâtiment",
+          "description": "Automatisation et gestion technique des bâtiments (GTB/BMS) en Gironde.",
+          "url": "https://enerzig.com/gtb"
+        }
+      }
+    ]
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/enerzig",
+    "https://www.linkedin.com/company/enerzig",
+    "https://www.instagram.com/enerzig"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "comment": "Balises meta SEO optimisées pour toutes les pages Enerzig — à implémenter dans le CMS",
+  "pages": [
+    {
+      "url": "https://enerzig.com/",
+      "title": "Électricien RGE à Libourne & Gironde | Enerzig",
+      "title_chars": 47,
+      "meta_description": "Enerzig, expert en électricité, panneaux solaires, climatisation et VMC à Libourne (33) et en Gironde. Certifié RGE. Devis gratuit ☎ Intervention rapide.",
+      "meta_description_chars": 152,
+      "h1": "Enerzig – Votre Expert Énergie à Libourne et en Gironde",
+      "keywords_primary": ["électricien Libourne", "électricien Gironde"],
+      "keywords_secondary": ["panneaux solaires Libourne", "climatisation Gironde", "VMC Gironde"],
+      "og_image": "https://enerzig.com/assets/enerzig-homepage.jpg"
+    },
+    {
+      "url": "https://enerzig.com/electricite",
+      "title": "Électricité Générale Libourne & Gironde | Enerzig",
+      "title_chars": 49,
+      "meta_description": "Électricité générale à Libourne et en Gironde : mise aux normes NFC 15-100, tableaux, prises, éclairage, domotique. Enerzig, certifié RGE. Devis gratuit.",
+      "meta_description_chars": 153,
+      "h1": "Électricité Générale à Libourne et en Gironde – Enerzig",
+      "keywords_primary": ["électricien Libourne", "électricité générale Gironde"],
+      "keywords_secondary": ["mise aux normes électrique Libourne", "tableau électrique Gironde"],
+      "og_image": "https://enerzig.com/assets/electricite-gironde.jpg"
+    },
+    {
+      "url": "https://enerzig.com/photovoltaique",
+      "title": "Panneaux Photovoltaïques Libourne & Gironde | Enerzig",
+      "title_chars": 52,
+      "meta_description": "Installation de panneaux solaires à Libourne et en Gironde. Autoconsommation, revente surplus, MaPrimeRénov'. Enerzig RGE certifié. Devis gratuit 48 h.",
+      "meta_description_chars": 151,
+      "h1": "Installation Photovoltaïque à Libourne et en Gironde – Enerzig",
+      "keywords_primary": ["panneaux solaires Libourne", "installation photovoltaïque Gironde"],
+      "keywords_secondary": ["installation solaire Bordeaux", "panneaux photovoltaïques 33500"],
+      "og_image": "https://enerzig.com/assets/photovoltaique-libourne.jpg"
+    },
+    {
+      "url": "https://enerzig.com/ventilation",
+      "title": "VMC Libourne & Gironde – Simple et Double Flux | Enerzig",
+      "title_chars": 55,
+      "meta_description": "Installation VMC simple et double flux à Libourne et en Gironde. Amélioration qualité de l'air, économies d'énergie. Enerzig RGE. Devis gratuit.",
+      "meta_description_chars": 145,
+      "h1": "Installation VMC à Libourne et en Gironde – Enerzig",
+      "keywords_primary": ["VMC Libourne", "VMC double flux Gironde"],
+      "keywords_secondary": ["ventilation mécanique contrôlée Bordeaux", "VMC double flux 33"],
+      "og_image": "https://enerzig.com/assets/vmc-gironde.jpg"
+    },
+    {
+      "url": "https://enerzig.com/climatisation",
+      "title": "Climatisation Réversible Libourne & Gironde | Enerzig",
+      "title_chars": 52,
+      "meta_description": "Installation et entretien de climatisation réversible à Libourne et en Gironde. Daikin, Mitsubishi, Atlantic. Enerzig certifié. Devis gratuit.",
+      "meta_description_chars": 143,
+      "h1": "Climatisation Réversible à Libourne et en Gironde – Enerzig",
+      "keywords_primary": ["climatisation Libourne", "climatisation réversible Gironde"],
+      "keywords_secondary": ["pompe à chaleur air/air Bordeaux", "installateur Daikin Libourne"],
+      "og_image": "https://enerzig.com/assets/climatisation-gironde.jpg"
+    },
+    {
+      "url": "https://enerzig.com/gtb",
+      "title": "GTB – Gestion Technique Bâtiment Gironde | Enerzig",
+      "title_chars": 50,
+      "meta_description": "Automatisation et GTB pour bâtiments tertiaires en Gironde. Décret tertiaire, pilotage éclairage, chauffage, VMC. Enerzig à Libourne. Devis gratuit.",
+      "meta_description_chars": 149,
+      "h1": "GTB – Gestion Technique du Bâtiment en Gironde – Enerzig",
+      "keywords_primary": ["GTB Gironde", "gestion technique bâtiment Bordeaux"],
+      "keywords_secondary": ["décret tertiaire Gironde", "automatisation bâtiment Libourne"],
+      "og_image": "https://enerzig.com/assets/gtb-gironde.jpg"
+    }
+  ],
+  "global_meta": {
+    "og_site_name": "Enerzig",
+    "og_locale": "fr_FR",
+    "twitter_card": "summary_large_image",
+    "robots": "index, follow",
+    "author": "Enerzig",
+    "geo_region": "FR-33",
+    "geo_placename": "Libourne, Gironde",
+    "geo_position": "44.9219;-0.2419",
+    "ICBM": "44.9219, -0.2419"
+  }
+}

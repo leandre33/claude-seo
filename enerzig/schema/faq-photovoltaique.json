@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quel est le prix d'une installation photovoltaïque à Libourne et en Gironde ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le coût d'une installation photovoltaïque en Gironde varie entre 8 000 € et 15 000 € pour une maison individuelle (3 à 6 kWc), avant aides. Avec MaPrimeRénov' et les primes CEE, la part restante à charge peut être réduite de 30 à 50 %. Enerzig vous accompagne dans le montage de votre dossier d'aides à Libourne et dans toute la Gironde."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Enerzig est-il certifié RGE pour l'installation de panneaux solaires en Gironde ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enerzig dispose des certifications nécessaires pour l'installation de panneaux photovoltaïques en Gironde. La certification RGE (Reconnu Garant de l'Environnement) est indispensable pour que vous puissiez bénéficier des aides de l'État (MaPrimeRénov', CEE). Contactez-nous pour vérifier notre qualification pour votre projet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelles aides financières sont disponibles pour les panneaux solaires à Bordeaux et en Gironde ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plusieurs aides sont accessibles en Gironde : MaPrimeRénov' (jusqu'à 4 000 €), les Certificats d'Économies d'Énergie (CEE), la prime à l'autoconsommation d'EDF OA (jusqu'à 370 €/kWc), le taux de TVA réduit à 10 %, et l'exonération de taxe foncière pendant 2 ans dans certaines communes de Gironde. Bordeaux Métropole propose également une prime de 1 000 € pour l'autoconsommation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "En combien de temps une installation photovoltaïque est-elle rentabilisée dans le Libournais ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dans le Libournais et en Gironde, grâce à un ensoleillement annuel de plus de 2 000 heures, le retour sur investissement d'une installation photovoltaïque est généralement atteint en 8 à 12 ans. En autoconsommation avec revente du surplus, les économies annuelles sur facture peuvent atteindre 800 à 1 500 € pour une installation de 3 kWc."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle est la différence entre VMC simple flux et double flux ? Laquelle choisir en Gironde ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La VMC simple flux extrait l'air vicié de votre maison. La VMC double flux extrait l'air vicié ET insuffle de l'air neuf filtré, tout en récupérant jusqu'à 90 % de la chaleur de l'air sortant. En Gironde, où les hivers sont doux mais les étés chauds, la VMC double flux est fortement recommandée pour les constructions neuves et les rénovations performantes. Elle améliore la qualité de l'air et réduit la consommation de chauffage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce que la GTB (Gestion Technique du Bâtiment) et à qui s'adresse-t-elle ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La GTB (Gestion Technique du Bâtiment) est un système centralisé qui pilote et optimise les équipements d'un bâtiment : éclairage, chauffage, climatisation, ventilation, sécurité et énergie. Elle s'adresse principalement aux bâtiments tertiaires (bureaux, commerces, hôtels, entrepôts) en Gironde soumis au décret tertiaire, mais aussi aux grandes maisons et aux collectivités. Enerzig conçoit et installe des solutions GTB sur mesure à Libourne et Bordeaux."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Enerzig intervient-il uniquement à Libourne ou aussi sur Bordeaux et toute la Gironde ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enerzig intervient dans tout le département de la Gironde (33) et en Nouvelle-Aquitaine. Nos équipes couvrent Libourne, Bordeaux, la Bordeaux Métropole, le Libournais (Saint-Émilion, Pomerol, Fronsac), le Médoc, le Blayais, la Haute-Gironde, et le Bassin d'Arcachon. N'hésitez pas à nous contacter pour un devis gratuit sur votre secteur."
+      }
+    }
+  ]
+}

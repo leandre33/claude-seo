@@ -8,9 +8,33 @@ import {
   ArrowRight,
   Phone,
   CheckCircle2,
+  MapPin,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import StatCounter from "@/components/StatCounter";
+import SEO from "@/components/SEO";
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ElectricalContractor",
+  "@id": "https://enerzig.com/#organisation",
+  "name": "Enerzig",
+  "url": "https://enerzig.com",
+  "description": "Enerzig, expert en électricité générale, panneaux photovoltaïques, climatisation, VMC à Libourne et dans toute la Gironde. Certifié RGE QualiPV.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15 Rue Paul Bert",
+    "addressLocality": "Libourne",
+    "postalCode": "33500",
+    "addressRegion": "Nouvelle-Aquitaine",
+    "addressCountry": "FR"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Libourne" },
+    { "@type": "City", "name": "Bordeaux" },
+    { "@type": "AdministrativeArea", "name": "Gironde" }
+  ]
+};
 
 const services = [
   {
@@ -69,29 +93,43 @@ const testimonials = [
 export default function Home() {
   return (
     <div>
+      <SEO
+        title="Électricien RGE à Libourne & Gironde | Enerzig"
+        description="Enerzig, expert en électricité, panneaux solaires, climatisation et VMC à Libourne (33) et en Gironde. Certifié RGE QualiPV. Devis gratuit – Intervention rapide."
+        canonical="https://enerzig.com/"
+        schema={localBusinessSchema}
+      />
+
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-enerzig-dark via-slate-800 to-slate-900 text-white overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PHBhdGggZD0iTTM2IDM0djZoLTZWMzRoLTZ2LTZoNnYtNmg2djZoNnY2aC02eiIvPjwvZz48L2c+PC9zdmc+')] opacity-30" />
         <div className="container mx-auto px-4 py-20 md:py-28 relative">
           <div className="max-w-2xl">
             <AnimatedSection animation="fade-up" delay={0}>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-enerzig-orange/20 border border-enerzig-orange/30 rounded-full text-enerzig-orange text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-enerzig-orange/20 border border-enerzig-orange/30 rounded-full text-enerzig-orange text-sm font-medium mb-4">
                 <ShieldCheck className="w-4 h-4" />
-                Artisan RGE certifié — Nouvelle-Aquitaine
+                Artisan RGE certifié QualiPV — Gironde
+              </div>
+            </AnimatedSection>
+            <AnimatedSection animation="fade-up" delay={50}>
+              <div className="flex items-center gap-1.5 text-gray-400 text-sm mb-4">
+                <MapPin className="w-3.5 h-3.5" />
+                <span>Libourne (33500) · Bordeaux · Gironde</span>
               </div>
             </AnimatedSection>
             <AnimatedSection animation="fade-up" delay={100}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Votre expert en{" "}
                 <span className="text-enerzig-orange">solutions énergétiques</span>{" "}
-                à Libourne
+                à Libourne et en Gironde
               </h1>
             </AnimatedSection>
             <AnimatedSection animation="fade-up" delay={200}>
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Électricité, panneaux photovoltaïques, climatisation — Enerzig vous
-                accompagne pour réduire vos factures d'énergie et moderniser vos
-                installations en Gironde et Nouvelle-Aquitaine.
+                Électricité générale, panneaux photovoltaïques, climatisation réversible et VMC —
+                Enerzig intervient à <strong className="text-white">Libourne</strong>,{" "}
+                <strong className="text-white">Bordeaux</strong> et dans toute la{" "}
+                <strong className="text-white">Gironde (33)</strong> pour réduire vos factures d'énergie.
               </p>
             </AnimatedSection>
             <AnimatedSection animation="fade-up" delay={300}>
@@ -241,6 +279,62 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Zone d'intervention locale */}
+      <section className="py-14 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <AnimatedSection className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-enerzig-dark mb-3">
+              Zone d'intervention – Gironde (33)
+            </h2>
+            <p className="text-gray-500 max-w-xl mx-auto text-sm">
+              Basé à <strong>Libourne (33500)</strong>, Enerzig intervient dans tout le département de la Gironde.
+            </p>
+          </AnimatedSection>
+          <AnimatedSection className="flex flex-wrap justify-center gap-2 mb-8">
+            {["Libourne", "Bordeaux", "Libournais", "Saint-Émilion", "Bordeaux Métropole",
+              "Médoc", "Bassin d'Arcachon", "Entre-Deux-Mers", "Blayais", "Haute-Gironde"].map((z) => (
+              <span key={z} className="bg-white border border-gray-200 text-gray-600 px-3 py-1.5 rounded-full text-sm shadow-sm">
+                {z}
+              </span>
+            ))}
+          </AnimatedSection>
+          <AnimatedSection className="flex flex-col sm:flex-row justify-center gap-4 text-sm">
+            <Link to="/electricien-libourne" className="text-enerzig-orange font-semibold hover:underline">
+              Électricien Libourne →
+            </Link>
+            <Link to="/electricien-bordeaux" className="text-enerzig-orange font-semibold hover:underline">
+              Électricien Bordeaux →
+            </Link>
+            <Link to="/panneaux-solaires-gironde" className="text-enerzig-orange font-semibold hover:underline">
+              Panneaux solaires Gironde →
+            </Link>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Aides financières CTA */}
+      <section className="py-12 bg-white border-y border-gray-100">
+        <div className="container mx-auto px-4">
+          <AnimatedSection className="flex flex-col md:flex-row items-center justify-between gap-6 bg-orange-50 border border-orange-100 rounded-2xl p-8">
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold text-enerzig-dark mb-2">
+                Jusqu'à <span className="text-enerzig-orange">20 000 €</span> d'aides financières
+              </h2>
+              <p className="text-gray-600 text-sm">
+                MaPrimeRénov', CEE, prime EDF OA, TVA à 10 %, prime Bordeaux Métropole (1 000 €) —
+                Enerzig monte votre dossier gratuitement.
+              </p>
+            </div>
+            <Link
+              to="/aides-financieres"
+              className="shrink-0 px-6 py-3 bg-enerzig-orange text-white font-semibold rounded-lg hover:bg-orange-600 transition-colors whitespace-nowrap"
+            >
+              Voir toutes les aides →
+            </Link>
+          </AnimatedSection>
         </div>
       </section>
 
